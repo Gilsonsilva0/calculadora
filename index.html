@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    
+</head>
+<body>
+    <div class="container">
+        <section class="calculadora">
+            <div class="resultado" placeholder="0">
+                <input type="text" id="resultado" placeholder="0" readonly>
+            </div>
+
+            <div class="butoes">
+                <button onclick="calcular('acao', 'c')" class="double-c">C</button>
+                <button onclick="calcular('acao', '/')">/</button>
+                <button onclick="calcular('acao', '*')">X</button>
+                <button onclick="calcular('valor', '7')">7</button>
+                <button onclick="calcular('valor', '8')">8</button>
+                <button onclick="calcular('valor', '9')">9</button>
+                <button onclick="calcular('acao', '-')">-</button>
+                <button onclick="calcular('valor', '4')">4</button>
+                <button onclick="calcular('valor', '5')">5</button>
+                <button onclick="calcular('valor', '6')">6</button>
+                <button onclick="calcular('acao', '+')">+</button>
+                <button onclick="calcular('valor', '1')">1</button>
+                <button onclick="calcular('valor', '2')">2</button>
+                <button onclick="calcular('valor', '3')">3</button>
+                <button onclick="calcular('acao', '=')" class="double-r" style="background-color: rgba(204, 130, 19, 0.842);">=</button>
+                <button onclick="calcular('valor', '0')" class="double-c">0</button>
+                <button onclick="calcular('acao', '.')">.</button>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js.js"></script>
+</body>
+</html>
